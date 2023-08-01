@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="meal.css">
+  <title>Meal Finder</title>
+  <script src="https://kit.fontawesome.com/54783ca5ac.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <!-- CONTAINER -->
+  <div id="container">
+    <h1>Meal Finder</h1>
+    <div class="flex">
+      <!-- FORM THAT CONTAIN FORM CONTROL -->
+      <form class="flex" id="submit">
+        <!-- INPUT BOX -->
+        <input type="text" id="search" placeholder="Search for meals or keywords">
+        <!-- SEARCH BUTTON -->
+        <button class="search-btn" type="submit" title="Search Meal">
+          <!-- SEARCH ICON -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <!-- RANDOM MEAL GENERATOR BUTTON -->
+      <button class="random-btn" id="random" title="Random Meal">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+
+      <!-- FAVOURITE MEAL GENERATOR BUTTON -->
+      <button class="random-btn" id="favourite" title="Favourite Meal">
+        <i class="fa-solid fa-heart" style="color: #fb0404;"></i>
+      </button>
+    </div>
+
+    <div id="result-heading"></div>
+    <div id="meals" class="meals"></div>
+    <div id="single-meal"></div>
+  </div>
+
+  <script src="meal.js" defer></script>
+</body>
+</html>
