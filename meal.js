@@ -146,7 +146,11 @@ function addMealToDOM(meal) {
 
   mealsEl.innerHTML = `
     <div class="single-meal">
-      <h1>${meal.strMeal}</h1>
+      <h1>
+        ${meal.strMeal}
+          <div class="liked dislike" id="${meal.idMeal}">
+          </div>
+      </h1>
       <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
       <div class="single-meal-info">
         ${meal.strCategory && `<p>Category: ${meal.strCategory}</p>`}
